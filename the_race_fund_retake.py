@@ -31,7 +31,7 @@ for string in input_elements:
             break
         elif len(code) > length:
             code = code[:length]
-            #  Increasing each char with 16...
+            #  Increasing each char with the given length...
             geohashcode = ''.join([chr(ord(x) + length) for x in code])
             print(f"Coordinates found! {name} -> {geohashcode}")
             break
